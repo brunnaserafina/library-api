@@ -81,18 +81,18 @@
   $ git clone https://github.com/brunnaserafina/library-api.git
 ```
 
-3. Instale suas depêndencias:
+3. Crie um banco de dados local, você pode utilizar o pgAdmin para facilitar, e utilize o arquivo dump.sql que está na raíz do projeto para popular o banco;
 
-```bash
-  $ npm i
-```
-
-4. Crie um banco de dados local, você pode utilizar o pgAdmin para facilitar e utilize o arquivo dump.sql que está na raíz do projeto para popular o banco;
-
-5. Configure o arquivo .env na raiz do projeto com a variável de ambiente DATABASE_URL. Adicione a URL de conexão do seu banco de dados PostgreSQL:
+4. Configure o arquivo .env na raiz do projeto com a variável de ambiente DATABASE_URL. Adicione a URL de conexão do seu banco de dados PostgreSQL:
 
 ```bash
   DATABASE_URL=postgres://seu_usuario:senha@localhost:5432/nome_do_seu_banco_de_dados
+```
+
+5. Instale as depêndencias:
+
+```bash
+  $ npm i
 ```
 
 6. Inicie a aplicação na raíz do projeto:
@@ -107,7 +107,6 @@
 ### 🛠️ Tecnologias utilizadas
 
  <img align="left" alt="node" height="30px" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
-
  <img align="left" alt="express" height="30px" src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" />
   <img align="left" alt="postgres" height="30px" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" />
 
